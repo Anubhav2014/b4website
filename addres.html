@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	 <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+	<div class="card">
+		<h1 style="display: flex;justify-content: center;align-items: center; " id="heading">Login form</h1>
+	</div>
+	<div>
+	<div style="display: flex;justify-content: center;align-items: center;">
+		<h1 style="text-transform: capitalize;"></h1>
+	</div>
+	<div style="display: flex;justify-content: center;align-items: center;">
+		<label for="addres">addres:</label>
+		<input type="text" name="" placeholder="addres" style="text-transform: capitalize;color: red; border-radius: 5px;border-color: blue; "id="password">
+	</div>
+	<div id="show_error" style="display: flex;justify-content: center;align-items: center;">
+		
+	</div>
+	<div style="display: flex;justify-content: center;align-items: center;">
+		<label for="chekbox">Remember me</label>
+		<input type="checkbox" name="">
+		<div class="col-auto">
+		<a href="../../mordern website/index.html" class="btn btn-outline-danger"  style="display: flex;justify-content: center;align-items: center;" id="submit">Submit</a>
+		</div>
+		
+		</div>
+
+	</div>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#submit').click(function(event) {
+				var user = $('#password').val();
+
+				if(user == ""){ $('#show_error').html('**The address must be filled.');
+				$('#show_error').css('color','red'); return false;
+			}
+			
+			
+				
+				
+			});
+		});
+	</script>
+	
+
+
+</body>
+</html>
